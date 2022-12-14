@@ -37,12 +37,13 @@ app.use("/api/products",productRouter)
 app.use("/api/cart",cartRouter)
 
 
-const frontend = path.join(__dirname, 'frontend/build');
+//const frontend = path.join(__dirname, 'frontend/build');
 
 // Map the requests to the static React build directory
-app.use('/', express.static(frontend));
+//app.use('/', express.static(frontend));
 
 // All the unknown requests are redirected to the React SPA
-app.use(function (req, res, next) {
+/*app.use(function (req, res, next) {
     res.sendFile(path.join(frontend, 'index.html'));
 });
+*/
